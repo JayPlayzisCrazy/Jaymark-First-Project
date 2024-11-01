@@ -265,7 +265,7 @@ h4 {
           width: 0;
         }
         50%, 100% {
-          width: 15%;
+          width: 27%;
         }
       }
       @keyframes blink-caret {
