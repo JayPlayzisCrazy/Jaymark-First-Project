@@ -1,0 +1,312 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+h4 {
+    margin: 0;
+}
+    /* Header Section */
+.header {
+    padding: 0px 200px;
+}
+
+.text {
+    margin: -20px;
+    font-family: monospace;
+    border-right: 3px solid #03A062;
+    width: 0;
+    animation: typing 7s steps(20, end) infinite, blink-caret 0.5s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 700;
+    position: relative;
+}
+@keyframes typing {
+    0%, 50% {
+      width: 0;
+    }
+    50%, 100% {
+      width: 6.4%;
+    }
+  }
+  @keyframes blink-caret {
+    100% {
+      border-color: 1px solid black;
+    }
+  }
+/* Header Section */
+.content-banner {
+    vertical-align: middle;
+    width: 450px;
+    font-family: "Carter One", system-ui;
+}
+.gif-animation {
+    vertical-align: middle;
+    width: 300px;
+}
+.home-banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 0px;
+    background-image: url(Bg-site1full.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -70px;
+}
+
+.button-learn {
+    background-image: url(bg-button.avif);
+    padding: 10px 50px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    font-family: "Carter One", system-ui;
+    border-radius: 20px;
+    border: 2px solid #d35400;
+    transition: 0.5s;
+    cursor: pointer;
+}
+    .button-learn:hover {
+        box-shadow: -26px 26px 30px 0px rgba(235,152,78,1);
+        border: 1px solid #edbb99;
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+        .button-learn:active {
+            color: #edbb99;
+        }
+
+.push-ups-gif {
+    width: 400px;
+    height: 300px;
+}
+
+.next-section {
+    background-color: #2e4053;
+    padding: 50px 100px;
+}
+.heading-next-section {
+    text-align: center;
+    color: white;
+    font-family: "Carter One", system-ui;
+}
+
+
+    .colomn1 {
+        width: 320px;
+        font-family: "Comic Neue", cursive;
+        color: black;
+        background: white;
+        border-radius: 10px;
+        border: 1px solid #dc7633;
+        transition: 0.5s;
+    }
+    .colomn1:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        box-shadow: 10px 10px 40px 0px rgba(27,38,49,1);
+    }
+        .content-in-video {
+            padding: 10px 10px;
+        }
+            .button-fullwatch {
+                background-image: url(bg-button.avif);
+                border: none;
+                padding: 10px 10px;
+                color: white;
+                font-family: "Carter One", system-ui;
+                border-radius: 25px;
+                cursor: pointer;
+                vertical-align: bottom;
+            }
+                .button-fullwatch:hover {
+                    color: black;  
+                }
+
+.all-colomn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+ /* Hamburger button */
+ .menu-icon {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    float: right;
+    position: fixed;
+    top: 1;
+    right: 50px;
+    z-index: 100;
+  }
+  .menu-icon div {
+    width: 100%;
+    height: 4px;
+    background-image: url(bg-button.avif);
+    transition: 0.4s;
+    z-index: 100;
+  }
+     /* Toggle effect for hamburger animation */
+  .menu-icon.active div:nth-child(1) {
+    transform: rotate(50deg) translate(10px, 7px);
+  }
+  .menu-icon.active div:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icon.active div:nth-child(3) {
+    transform: rotate(-50deg) translate(10px, -7px);
+  }
+  .menu-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.4s ease;
+    font-family: "Carter One", system-ui;
+    z-index: 50;
+  }
+    /* Flyout effect */
+  .menu-list.active {
+    right: 0;
+  }
+
+  .menu-list a {
+    padding: 20px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s;
+  }
+
+  .menu-list a:hover {
+    background-image: url(bg-button.avif);
+  }
+
+  /* Footer Styles */
+  .footer-section {
+    background: #2e4053;
+    border-top: 1px solid gray;
+    padding: 10px 0;
+    text-align: center;
+  }
+    .copyright-footer {
+        margin: auto;
+        font-size: 12px;
+        font-family: "Comic Neue", cursive;
+        color: white;
+    }
+
+
+/* Tablet layout (600px - 900px) */
+@media (max-width: 900px) and (min-width: 600px) {
+    .header {
+        padding: 10px 70px;
+    }
+
+    @keyframes typing {
+        0%, 50% {
+          width: 0;
+        }
+        50%, 100% {
+          width: 11%;
+        }
+      }
+      @keyframes blink-caret {
+        100% {
+          border-color: 1px solid black;
+        }
+      }
+      .menu-icon {
+        right: 50px;
+      }
+      .all-colomn {
+        display: block;
+        justify-items: center;
+      }
+        .colomn1 {
+            margin-bottom: 50px;
+        }
+    
+        .content-banner {
+            width: 300px;
+        }
+        .push-ups-gif {
+            width: 300px;
+        }
+}
+
+/* Mobile layout (under 600px) */
+@media (max-width: 599px) {
+    .header {
+        padding: 10px 50px;
+    }
+    @keyframes typing {
+        0%, 50% {
+          width: 0;
+        }
+        50%, 100% {
+          width: 15%;
+        }
+      }
+      @keyframes blink-caret {
+        100% {
+          border-color: 1px solid black;
+        }
+      }
+      .home-banner {
+        display: block;
+        padding-top: 100px;
+        background-position: right;
+        width: 350px;
+        margin-top: 0px;
+        height: 400px;
+      }
+        .title-tag {
+            color: #f39c12;
+            margin: auto;
+            font-size: 40px;
+        }
+            .description-tag {
+                margin: auto;
+                font-size: 14px;
+                padding: 0px 20px;
+            }
+                .content-banner {
+                    text-align: center;
+                    width: 350px;
+                }
+                    .button-learn {
+                        margin-top: 20px;
+                    }
+                      .push-ups-gif {
+                        width: 300px;
+                        display: none;
+                      }
+                      
+    .all-colomn {
+        display: block;
+        justify-items: center; }
+        .colomn1 {
+          margin-bottom: 30px;
+        }
+}
