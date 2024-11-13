@@ -3,3 +3,7 @@ function toggleMenu() {
     document.querySelector('.menu-icon').classList.toggle('active');
     document.getElementById('menuList').classList.toggle('active');
   }
+
+function myFunction() {
+    alert ("Coming Soon");
+}
